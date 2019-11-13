@@ -5,7 +5,10 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  
+  def activate
+    @student = Student.find(params[:id])
+    redirect_to student_path(@student)
+  end
 
   def show
   end
