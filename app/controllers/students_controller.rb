@@ -5,9 +5,7 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  def activate_student_path
-    self.show
-  end
+  
 
   def show
   end
